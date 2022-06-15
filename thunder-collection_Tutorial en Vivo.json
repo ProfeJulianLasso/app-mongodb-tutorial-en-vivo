@@ -1,0 +1,188 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Tutorial en Vivo",
+    "dateExported": "2022-06-15T18:34:40.231Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "68591b6e-a219-4bf6-960e-e34fbfc27796",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Get all users",
+            "url": "http://localhost:3000/api/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-06-15T16:34:18.690Z",
+            "modified": "2022-06-15T16:34:18.690Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c50ce2a2-ab55-487e-852c-828375541b09",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Create new user",
+            "url": "http://localhost:3000/api/v1/user",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-06-15T16:34:27.363Z",
+            "modified": "2022-06-15T16:34:27.363Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Andres"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "Figueroa"
+                    },
+                    {
+                        "name": "email",
+                        "value": "andres.figueroa@sofka.com.co"
+                    },
+                    {
+                        "name": "phones",
+                        "value": "123",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phones",
+                        "value": "321",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "287cf248-11a9-48b3-839a-0268537af8c8",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Get user by ID",
+            "url": "http://localhost:3000/api/v1/user/c12d8733-d05e-4fad-8379-2216710e0d5c",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-06-15T16:34:54.542Z",
+            "modified": "2022-06-15T17:15:52.125Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fa17bba8-fedd-4f77-8fbc-33e66132ec48",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Update user",
+            "url": "http://localhost:3000/api/v1/user/c12d8733-d05e-4fad-8379-2216710e0d5c",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-06-15T16:43:02.698Z",
+            "modified": "2022-06-15T17:16:07.648Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Lalo"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "Landa"
+                    },
+                    {
+                        "name": "email",
+                        "value": "lalo.landa@gmail.com"
+                    },
+                    {
+                        "name": "phones",
+                        "value": "123"
+                    },
+                    {
+                        "name": "phones",
+                        "value": "098"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5a876f35-c7e7-4a5c-bf05-1d9bf0b7ae8d",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Update user",
+            "url": "http://localhost:3000/api/v1/user/c12d8733-d05e-4fad-8379-2216710e0d5c",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2022-06-15T16:54:26.770Z",
+            "modified": "2022-06-15T17:16:36.436Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Julian",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "Lasso",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "julian.lasso@sofka.com.co"
+                    },
+                    {
+                        "name": "phones",
+                        "value": "123",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phones",
+                        "value": "098",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c38b216-63b5-43e6-b87e-8f20b3187336",
+            "colId": "97e1af58-f280-4697-81bf-74bbcf916fc8",
+            "containerId": "",
+            "name": "Delete user",
+            "url": "http://localhost:3000/api/v1/user/c12d8733-d05e-4fad-8379-2216710e0d5c",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2022-06-15T17:00:20.044Z",
+            "modified": "2022-06-15T17:16:56.123Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
